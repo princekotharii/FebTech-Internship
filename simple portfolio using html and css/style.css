@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #3498db;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+
+header {
+    margin-top: 70px;
+    text-align: center;
+    padding: 40px;
+    background: #2980b9;
+    color: white;
+    animation: slideDown 1.5s ease;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    animation:  glow 2s infinite;
+}
+
+header h3 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #3498db;
+    color: white;
+}
+
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px yellow; }
+    to { text-shadow: 0 0 20px white; }
+}
